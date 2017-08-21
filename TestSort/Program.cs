@@ -21,7 +21,7 @@ namespace TestSort
                     tmplst[i] = int.Parse(Console.ReadLine());
                 }
 
-                int[] tmplst1 = SelectionSort.Sort(tmplst);
+                int[] tmplst1 = BubbleSort.Sort(tmplst);
                 Console.Write("Result : ");
                 foreach (int tmp in tmplst1)
                     Console.Write(tmp + " ");
