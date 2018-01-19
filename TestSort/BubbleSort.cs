@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace TestSort
 {
-    class InserttionSort
+    class BubbleSort
     {
         public static int[] Sort(int[] tmplst)
         {
             int count = tmplst.Length;
-            for (int i = 1; i < count; i++)
+            for (int i = 0; i < count - 1; i++)
             {
-                int insertindex = i;
-                for (int j = i -1; j >= 0; j--)
+                int bubbletindex = count - 1;
+                for (int j = count - 2; j >= i; j--)
                 {
-                    if (tmplst[j] > tmplst[insertindex])
+                    if (tmplst[j] > tmplst[bubbletindex])
                     {
                         // Swap
                         int tmp = tmplst[j];
-                        tmplst[j] = tmplst[insertindex];
-                        tmplst[insertindex] = tmp;
+                        tmplst[j] = tmplst[bubbletindex];
+                        tmplst[bubbletindex] = tmp;
 
                         // Change index
-                        insertindex = j;
+                        bubbletindex = j;
                     }
                 }
             }

@@ -19,6 +19,7 @@ namespace TestSort
                 {
                     if (tmplst[j] < tmplst[minindex])
                     {
+                        // Change index
                         minindex = j;
                     }
                 }
